@@ -19,6 +19,7 @@ const orderSchema = new mongoose.Schema(
       country: {type: String, required: true},
     },
     paymentMethod: {type: String, required: true},
+    paymentResult: {id: String, status: String, email_address: String},
     itemsPrice: {type: Number, required: true},
     shippingPrice: {type: Number, required: true},
     taxPrice: {type: Number, required: true},
@@ -35,4 +36,4 @@ const orderSchema = new mongoose.Schema(
 
 const Order =
   mongoose.models.Order || mongoose.model('Order', orderSchema);
-export default Order;   
+export default Order;     
