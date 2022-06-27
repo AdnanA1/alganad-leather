@@ -1,4 +1,3 @@
-/* eslint-disable no-mixed-spaces-and-tabs */
 import { getSession } from "next-auth/react";
 import db from '../../../utils/db';
 import Order from '../../../models/Order';
@@ -41,4 +40,4 @@ const handler = async (req, res) => {
 	res.send({ordersCount, productsCount, usersCount, ordersPrice, salesData});  
 };
 
-export default handler;        
+export default handler;          
