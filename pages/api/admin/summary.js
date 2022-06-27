@@ -7,8 +7,9 @@ import User from '../../../models/User';
 
 const handler = async (req, res) => {
   const session = await getSession({req});
+	console.log(session);
 	if (!session || (session && !session.user.isAdmin)) {
-		return res.status(401).send('signin required');
+		return res.status(401).send({message: 'signin required'});   
 	}
 
 	await db.connect();
@@ -35,9 +36,8 @@ const handler = async (req, res) => {
 		},
 	]);
 
-
 	await db.disconnect();
 	res.send({ordersCount, productsCount, usersCount, ordersPrice, salesData});  
 };
 
-export default handler;          
+export default handler;                
