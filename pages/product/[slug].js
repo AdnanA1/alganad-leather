@@ -87,4 +87,4 @@ export async function getServerSideProps(context) {
       product: product ? db.convertDocToObj(product) : null,
     },
   };
-}          
+}            
