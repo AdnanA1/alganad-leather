@@ -1,4 +1,3 @@
-/* eslint-disable no-mixed-spaces-and-tabs */
 import {signOut, useSession} from 'next-auth/react';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -28,7 +27,7 @@ export default function Layout({title, children}) {
     <>
       <Head>
         <title>
-          {title ? title + ' -Kholaidi-Fashion' : 'Kholaidi-Fashion'}
+          {title ? title + ' -Alganad-Leather' : 'Alganad-Leather'}
         </title>
         <meta name="description" content="Ecommerce Website" />
         <link rel="icon" href="/favicon.ico" />
@@ -40,7 +39,7 @@ export default function Layout({title, children}) {
         <header>
           <nav className="flex h-12 items-center px-4 justify-between shadow-md">
             <Link href="/">
-              <a className="text-lg font-bold">kholaidi-fashion</a>
+              <a className="text-lg font-bold">Alganad-Leather</a>
             </Link>
             <div>
               <Link href="/cart">
@@ -106,9 +105,9 @@ export default function Layout({title, children}) {
         </header>
         <main className="container m-auto mt-4 px-4">{children}</main>
         <footer className="flex h-10 justify-center items-center shadow-inner">
-          Copyright @ 2022 Kholaidi-Fashion
+          Copyright @ 2022 Alganad-Leather 160 Orchard street,NewYork city
         </footer>
       </div>
     </>
   );
-}                           
+}                              
