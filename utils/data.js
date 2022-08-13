@@ -910,7 +910,7 @@ const data = {
       countInStock: 1,
       description:
         'Warm and stylish, this womens fur coat is perfect for keeping you warm through the winter. The coat is made of high-quality faux fur with a comfortable lining that will keep you cozy. It features a hood, long sleeves, and a front closure, as well as two pockets to keep your hands warm.This womens fur coat is available in black, brown, or purple and will add a touch of luxury to any outfit. It makes a great addition to your wardrobe for winter fashion.',
-    },
+    }, 
     {
       name: 'women-fur-coat',
       slug: 'women-fur-coat70',
