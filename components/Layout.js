@@ -26,9 +26,7 @@ export default function Layout({title, children}) {
 	return (
     <>
       <Head>
-        <title>
-          {title ? title + ' -Alganad-Leather' : 'Alganad-Leather'}
-        </title>
+        <title>{title ? title + ' -Alganad-Leather' : 'Alganad-Leather'}</title>
         <meta name="description" content="Ecommerce Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -83,7 +81,7 @@ export default function Layout({title, children}) {
                           Admin Dashboard
                         </DropdownLink>
                       </Menu.Item>
-                    )}         
+                    )}
                     <Menu.Item>
                       <a
                         className="dropdown-link"
@@ -105,9 +103,18 @@ export default function Layout({title, children}) {
         </header>
         <main className="container m-auto mt-4 px-4">{children}</main>
         <footer className="flex h-10 justify-center items-center shadow-inner">
-          Copyright @ 2022 Alganad-Leather 160 Orchard street,NewYork NewYork Tel#1(646)490-8373
+          <div>
+            <p>
+              <a>160 Orchard St, New York, NY 10002, USA</a>
+              <a>+1(646)490-8373</a>
+            </p>
+            <p>
+              <a>alganad@alganad-leather.com</a>
+            </p>
+            Copyright @ 2022 Alganad-Leather
+          </div>
         </footer>
       </div>
     </>
   );
-}                               
+}                                   
