@@ -539,7 +539,7 @@ const data = {
       slug: 'mens-leather-jacket41',
       category: 'mens-Jackets',
       image: '/images/mens-leather-jacket41.jpg',
-      price: 350,
+      price: 349,   
       brand: 'Turkish',
       rating: 4.5,
       numReviews: 8,
